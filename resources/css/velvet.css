@@ -1292,9 +1292,13 @@ hr {
 
 #ft-ma2015 .ft-testimonial {
   background-color: #EEEEEE; }
-  #ft-ma2015 .ft-testimonial .firdaus, #ft-ma2015 .ft-testimonial .tan, #ft-ma2015 .ft-testimonial .chandry, #ft-ma2015 .ft-testimonial .dzayed {
+  #ft-ma2015 .ft-testimonial .participant {
     display: none; }
+  #ft-ma2015 .ft-testimonial .participant:nth-child(1) {
+    display: block; }
 
+.ft-testimonial .participant iframe {
+  width: 100%; }
 .ft-testimonial h2 {
   margin: 0; }
 .ft-testimonial hr {

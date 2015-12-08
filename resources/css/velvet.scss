@@ -1763,12 +1763,18 @@
 
 	#ft-ma2015 .ft-testimonial {
 		background-color: #EEEEEE;
-		.firdaus, .tan, .chandry, .dzayed {
+		.participant {
 			display: none;
+		}
+		.participant:nth-child(1) {
+			display: block;
 		}
 	}
 
 	.ft-testimonial {
+		.participant iframe {
+			width: 100%; 
+		}
 		h2 {
 			margin: 0;
 		}
