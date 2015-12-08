@@ -1,0 +1,342 @@
+.cbp p {
+	font-size: 0.7em;
+
+	width: 90%;
+	max-width: 560px;
+}
+
+.cbp h3 {
+	text-align: left;
+}
+
+span.cbp-num {
+	font-size: 4em;
+}
+
+.col-40 {
+	width: 40%;
+	float: left;
+}
+
+.col-60 {
+	width: 60%;
+	float: left;
+	padding-left: 5%;
+}
+
+.cbp {
+	margin-top: 7.5%;
+}
+
+.ccard {
+	background-color: white;
+	box-shadow: 5px 5px 0px #AAAAAA;
+
+	max-width: 100%;
+
+	padding: 30px;
+	margin-bottom: 15px;
+}
+
+.ccard-feature {
+	background-color: white;
+	box-shadow: 5px 5px 0px #AAAAAA;
+
+	max-width: 100%;
+
+	padding-bottom: 30px;
+	margin-bottom: 15px;
+}
+
+.cgray {
+	border-left: 15px solid #58595B;
+}
+
+.cred {
+	border-left: 15px solid #D7333B;
+}
+
+.cblue {
+	border-left: 15px solid #00ABC7;
+}
+
+.cgreen {
+	border-left: 15px solid #66AA45;
+}
+
+.cyellow {
+	border-left: 15px solid #FAA61A
+}
+
+.corange {
+	border-left: 15px solid #F15A22;
+}
+
+.ccard img.cprofile {
+	width: 70px;
+	border-radius: 100%;
+
+	margin-bottom: 15px;
+}
+
+.ccard-feature img.cfeature {
+	max-width: 100%;
+
+	margin-bottom: 30px;
+}
+
+.ccard-feature .ctext {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.ctext span {
+	color: #00ABC7;
+}
+
+.ctext {
+	font-size: 14px;
+}
+
+.ccard-feature .ctext {
+	font-size: 18px;
+}
+
+.ctext .cattribution {
+	text-align: right;
+
+	font-size: 14px;
+}
+
+a.cdis {
+	text-decoration: none;
+	color: #555;
+}
+
+button.discus {
+
+	margin: auto;
+	display: block;
+
+	background: transparent;
+	border: 2px solid #555;
+	border-radius: 4px;
+
+	width: 180px;
+	padding: 10px;
+
+	text-align: center;
+	font-size: 14px;
+}
+
+a.cdis:hover {
+	color: #222;
+}
+
+button.discus:hover {
+	border: 2px solid #222;
+}
+
+.csection {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+
+.ccol {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.ccol:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+
+.cgroup:before,
+.cgroup:after { content:""; display:table; }
+.cgroup:after { clear:both;}
+.cgroup { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+
+.cspan_4_of_4 {
+	width: 100%;
+}
+.cspan_3_of_4 {
+	width: 74.6%;
+}
+.cspan_2_of_4 {
+	width: 49.2%;
+}
+.cspan_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 768px) {
+	.ccol {  margin: 1% 0 1% 0%; }
+	.cspan_1_of_4, .cspan_2_of_4, .cspan_3_of_4, .cspan_4_of_4 { width: 100%; }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.col-40,
+	.col-60 {
+		width: 90%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.col-40 img,
+	.col-60 img {
+		width: 90%;
+		max-width: 740px;
+
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+
+		display: block;
+	}
+
+}
+
+#cant-get-enough .download {
+  float: left;
+  display: block;
+  margin-right: 4.29448%;
+  width: 43.50716%;
+  margin-left: 8.69121%; }
+  #cant-get-enough .download:last-child {
+    margin-right: 0; }
+  #cant-get-enough .download small {
+    color: #999999;
+    font-size: 0.7em;
+    padding-left: 28px; }
+#cant-get-enough .bubble {
+  float: left;
+  display: block;
+  margin-right: 4.29448%;
+  width: 34.81595%;
+  margin-right: 0; }
+  #cant-get-enough .bubble:last-child {
+    margin-right: 0; }
+#cant-get-enough .signup {
+  float: left;
+  display: block;
+  margin-right: 4.29448%;
+  width: 100%;
+  text-align: center; }
+  #cant-get-enough .signup:last-child {
+    margin-right: 0; }
+  #cant-get-enough .signup input {
+    background-color: white;
+    border: 2px solid #bbbfc3;
+    width: 380px;
+    font-weight: normal; }
+    #cant-get-enough .signup input.email {
+      border-radius: 12px 0 0 12px; }
+  #cant-get-enough .signup button, #cant-get-enough .signup .button {
+    color: white;
+    background-color: #bbbfc3;
+    border-radius: 0 12px 12px 0;
+    border: 2px solid #bbbfc3;
+    width: 290px; }
+  #cant-get-enough .signup input, #cant-get-enough .signup button, #cant-get-enough .signup .button {
+    height: 64px;
+    padding: 10px 20px;
+    vertical-align: top;
+    outline: none; }
+    #cant-get-enough .signup input:focus, #cant-get-enough .signup button:focus, #cant-get-enough .signup .button:focus {
+      border: 2px solid #6abb23; }
+  #cant-get-enough .signup:hover input {
+    border-color: #9acd6d; }
+  #cant-get-enough .signup:hover button, #cant-get-enough .signup:hover .button {
+    background-color: #9acd6d;
+    border-color: #9acd6d; }
+  #cant-get-enough .signup:hover input:focus, #cant-get-enough .signup:hover button:focus, #cant-get-enough .signup:hover .button:focus {
+    border: 2px solid #6abb23; }
+#cant-get-enough .mc-field-group {
+  padding: 1px 0; }
+#cant-get-enough #mc_embed_signup .response,
+#cant-get-enough #mc_embed_signup div.mce_inline_error {
+  width: 620px;
+  background: none;
+  position: relative;
+  margin: -12px auto 0;
+  padding: 40px 0 0;
+  color: #1bc1db;
+  font-size: 0.75em;
+  line-height: 1.2em;
+  font-weight: 400;
+  text-align: left; }
+  #cant-get-enough #mc_embed_signup .response:before,
+  #cant-get-enough #mc_embed_signup div.mce_inline_error:before {
+    background-color: #1bc1db;
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    border-radius: 7px; }
+  #cant-get-enough #mc_embed_signup .response:after,
+  #cant-get-enough #mc_embed_signup div.mce_inline_error:after {
+    content: '';
+    position: absolute;
+    height: 35px;
+    top: 0;
+    left: 4px;
+    border-left: 1px solid #1bc1db; }
+#cant-get-enough #mc_embed_signup #mce-success-response:before, #cant-get-enough #mc_embed_signup #mce-success-response:after {
+  display: none; }
+#cant-get-enough #mc_embed_signup #mce-error-response, #cant-get-enough #mc_embed_signup div.mce_inline_error {
+  color: #e66a6f; }
+  #cant-get-enough #mc_embed_signup #mce-error-response:before, #cant-get-enough #mc_embed_signup div.mce_inline_error:before {
+    background-color: #e66a6f; }
+  #cant-get-enough #mc_embed_signup #mce-error-response:after, #cant-get-enough #mc_embed_signup div.mce_inline_error:after {
+    border-left: 1px solid #e66a6f; }
+#cant-get-enough #mc_embed_signup input.mce_inline_error {
+  border-color: #d5333a; }
+@media screen and (max-width: 1020px) {
+  #cant-get-enough .bubble img {
+    max-width: 300px; } }
+@media screen and (max-width: 768px) {
+  #cant-get-enough .column {
+    float: left;
+    display: block;
+    margin-right: 6.58307%;
+    width: 86.67712%; }
+    #cant-get-enough .column:last-child {
+      margin-right: 0; }
+    #cant-get-enough .column p {
+      padding-right: 0px; }
+    #cant-get-enough .column a {
+      margin: auto; }
+    #cant-get-enough .column small {
+      text-align: center;
+      display: block; }
+    #cant-get-enough .column.download, #cant-get-enough .column.download * {
+      text-align: center; }
+  #cant-get-enough .bubble {
+    display: none; }
+  #cant-get-enough .signup input::-webkit-input-placeholder {
+    text-align: center; }
+  #cant-get-enough .signup input::-moz-placeholder {
+    text-align: center; }
+  #cant-get-enough .signup input:-moz-placeholder {
+    text-align: center; }
+  #cant-get-enough .signup input:-ms-input-placeholder {
+    text-align: center; }
+  #cant-get-enough .signup input, #cant-get-enough .signup button, #cant-get-enough .signup .button {
+    width: 80%; }
+  #cant-get-enough .signup input.email {
+    border-radius: 12px 12px 0 0; }
+  #cant-get-enough .signup .button {
+    border-radius: 0 0 12px 12px; } }

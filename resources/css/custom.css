@@ -1,0 +1,83 @@
+body {
+	background-color: #F2F2F2;
+	font: 16px/1.5 "Raleway", "Helvetica", sans-serif;
+	font-weight: 300;
+}
+
+.wrapper {
+	max-width: 800px;
+	width: 90%;
+	margin: 2.5% auto;
+	display: block;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 300;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.7;
+	padding-right: 0.8em;
+}
+
+img {
+	margin-top: 2.5%;
+	width: 100%;
+}
+
+/*Other*/
+
+	/*  SECTIONS  */
+
+	.oth_section {
+		clear: both;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/*  COLUMN SETUP  */
+
+	.oth_col {
+		display: block;
+		float:left;
+		margin: 1% 0 1% 1.6%;
+	}
+	.oth_col:first-child { margin-left: 0; }
+
+	/*  GROUPING  */
+
+	.oth_group:before,
+	.oth_group:after { content:""; display:table; }
+	.oth_group:after { clear:both;}
+	.oth_group { zoom:1; /* For IE 6/7 */ }
+
+	/*  GRID OF FOUR  */
+
+	.oth_span_4_of_4 {
+		width: 100%;
+	}
+	.oth_span_3_of_4 {
+		width: 74.6%;
+	}
+	.oth_span_2_of_4 {
+		width: 49.2%;
+	}
+	.oth_span_1_of_4 {
+		width: 23.8%;
+	}
+
+	/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+	@media only screen and (max-width: 480px) {
+		.oth_col {  margin: 1% 0 1% 0%; }
+		.oth_span_1_of_4, .oth_span_2_of_4, .oth_span_3_of_4, .oth_span_4_of_4 { width: 100%; }
+	}

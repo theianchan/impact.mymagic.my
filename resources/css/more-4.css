@@ -1,0 +1,44 @@
+#teamprofiles {
+  text-align: center;
+  padding-bottom: 5%;
+  background-color: #ebb031; }
+  #teamprofiles p.funFactsBlock {
+    font-weight: 100;
+    color: white;
+    max-width: 600px;
+    display: block;
+    margin: 2em auto; }
+  #teamprofiles section {
+    max-width: 1000px;
+    clear: both;
+    padding: 0px;
+    margin: 0px auto; }
+    #teamprofiles section:before, #teamprofiles section:after {
+      content: "";
+      display: table; }
+    #teamprofiles section:after {
+      clear: both; }
+    #teamprofiles section .image {
+      float: left;
+      display: block;
+      float: left;
+      margin: 3.2% 0 1% 1.6%;
+      width: 23.8%; }
+      @media only screen and (max-width: 480px) {
+        #teamprofiles section .image {
+          margin: 1% 0 1% 1%;
+          width: 100%; } }
+      #teamprofiles section .image:first-child {
+        margin-left: 0; }
+      #teamprofiles section .image small {
+        color: #FFFFFF;
+        font-size: 12px;
+        line-height: 12px; }
+      #teamprofiles section .image strong {
+        font-size: 1.25em; }
+      #teamprofiles section .image img {
+        border-radius: 100%;
+        border: 8px double #FFFFFF;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=team-styles.css.map */
