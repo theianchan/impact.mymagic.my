@@ -1154,6 +1154,10 @@ hr {
   max-width: 6.25rem;
   border-bottom: 2px solid; }
 
+a {
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms; }
+
 .ft-intro .wrapper {
   max-width: 32.50em; }
 .ft-intro p.date {
@@ -1210,7 +1214,8 @@ hr {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 48.6%; }
+    padding-bottom: 48.6%;
+    transition-duration: 250ms; }
   .ft-full-carousel ul.controls {
     list-style: none;
     margin-top: -35px; }
@@ -1303,6 +1308,8 @@ hr {
   margin: 0; }
 .ft-testimonial hr {
   margin: 1.563rem auto; }
+.ft-testimonial .row:nth-child(2) {
+  margin: 1.563em auto; }
 .ft-testimonial ul.testimonial-controls {
   list-style: none; }
   .ft-testimonial ul.testimonial-controls li {
@@ -1356,7 +1363,19 @@ blockquote.instagram-media {
         position: relative;
         top: -22px;
         width: 44px; }
-    blockquote.instagram-media > div p {
+    blockquote.instagram-media > div p:nth-child(1) {
+      margin: 8px 0 0 0;
+      padding: 0 4px; }
+      blockquote.instagram-media > div p:nth-child(1) a {
+        color: #000;
+        font-family: Arial,sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 17px;
+        text-decoration: none;
+        word-wrap: break-word; }
+    blockquote.instagram-media > div p:nth-child(2) {
       color: #c9c8cd;
       font-family: Arial, sans-serif;
       font-size: 14px;
@@ -1368,7 +1387,7 @@ blockquote.instagram-media {
       text-align: center;
       text-overflow: ellipsis;
       white-space: nowrap; }
-      blockquote.instagram-media > div p a {
+      blockquote.instagram-media > div p:nth-child(2) a {
         color: #c9c8cd;
         font-family: Arial,sans-serif;
         font-size: 14px;
@@ -1376,9 +1395,45 @@ blockquote.instagram-media {
         font-weight: normal;
         line-height: 17px;
         text-decoration: none; }
-      blockquote.instagram-media > div p time {
+      blockquote.instagram-media > div p:nth-child(2) time {
         font-family: Arial, sans-serif;
         font-size: 14px;
         line-height: 17px; }
+
+.ft-footer {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .ft-footer a {
+    text-decoration: none; }
+    .ft-footer a:hover, .ft-footer a:active, .ft-footer a:focus {
+      color: #1BC1DB; }
+  .ft-footer a:nth-child(1) {
+    font-family: "Raleway", "Helvetica", sans-serif;
+    font-size: 1.125em;
+    font-weight: 500;
+    display: block;
+    padding: 0.938em 1.563em;
+    border: 2px solid;
+    border-radius: 8px;
+    max-width: 320px;
+    margin: 0 auto 0.938em;
+    background-color: rgba(255, 255, 255, 0.2); }
+    .ft-footer a:nth-child(1):hover, .ft-footer a:nth-child(1):active, .ft-footer a:nth-child(1):focus {
+      background-color: rgba(255, 255, 255, 0.6); }
+
+#ft-ma2015 .ft-footer > div {
+  width: 100%;
+  height: 0;
+  padding: 25% 0 75%;
+  background-color: #EEEEEE;
+  background-image: url(img/ma2015-background.jpg);
+  background-size: 200%;
+  background-position: 50%;
+  background-repeat: no-repeat; }
+  @media screen and (min-width: 64em) {
+    #ft-ma2015 .ft-footer > div {
+      padding: 12.5% 0 37.5%;
+      background-size: 100%;
+      background-postion: 0 0; } }
 
 /*# sourceMappingURL=velvet.css.map */

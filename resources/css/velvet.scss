@@ -21,7 +21,7 @@
 	// $timebox-date-border: 4px solid #00a6c9;
 
 	$background-gradient-top: #00d2ff;
-	$background-gradient-bottom: #3a7bd5;
+	$background-gradient-bottom: #3a7bd5; 
 	$timebox-accent: #1BC1DB;
 	$timebox-accent-highlight: #f8a61b;
 	$timebox-background: #daf6fc;
@@ -1592,6 +1592,10 @@
 		max-width: 6.25rem;
 		border-bottom: 2px solid;
 	}
+	a {
+		transition-duration: 250ms;
+		-webkit-transition-duration: 250ms;
+	}
 
 	.ft-intro {
 		.wrapper {
@@ -1665,6 +1669,7 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			padding-bottom: 48.6%;
+			transition-duration: 250ms;
 		}
 		ul.controls {
 			list-style: none;
@@ -1781,6 +1786,9 @@
 		hr {
 			margin: 1.563rem auto;
 		}
+		.row:nth-child(2) {
+			margin: 1.563em auto
+		}
 		ul.testimonial-controls {
 			list-style: none;
 			li {
@@ -1789,7 +1797,7 @@
 					display: block;
 					@media screen and (min-width: 64em) {
 					    margin-left: 50%;
-					}
+					} 
 				}
 				cursor: pointer;
 				margin: 0.313em;
@@ -1883,6 +1891,52 @@
 					line-height: 17px;
 				}
 			}
+		}
+	}
+
+	.ft-footer {
+		padding-top: 0;
+		padding-bottom: 0;
+		a {
+			text-decoration: none;
+			&:hover,
+			&:active,
+			&:focus {
+				color: #1BC1DB;
+			}
+		}
+		a:nth-child(1) {
+			font-family: $head-sans-serif;
+			font-size: 1.125em;
+			font-weight: 500;
+			display: block;
+			padding: 0.938em 1.563em;
+			border: 2px solid;
+			border-radius: 8px;
+			max-width: 320px;
+			margin: 0 auto 0.938em;
+			background-color: rgba(255,255,255,0.2);
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: rgba(255,255,255,0.6);
+			}
+		}
+	}
+
+	#ft-ma2015 .ft-footer>div {
+		width: 100%;
+		height: 0;
+		padding: 25% 0 75%;
+		background-color: #EEEEEE;
+		background-image: url(img/ma2015-background.jpg);
+	    background-size: 200%;
+	    background-position: 50%;
+		background-repeat: no-repeat;
+		@media screen and (min-width: 64em) {
+			padding: 12.5% 0 37.5%;
+			background-size: 100%;
+			background-postion: 0 0;
 		}
 	}
 
