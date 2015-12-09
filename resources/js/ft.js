@@ -39,25 +39,25 @@ $( "#content-8" ).click(function() {
 
 $( "#nurul" ).click(function() {
   $( ".participant" ).hide();
-  $( ".nurul" ).show();
+  $( ".nurul" ).show( "slow" );
 });
 
 $( "#firdaus" ).click(function() {
   $( ".participant" ).hide();
-  $( ".firdaus" ).show();
+  $( ".firdaus" ).show( "slow" );
 });
 
 $( "#tan" ).click(function() {
   $( ".participant" ).hide();
-  $( ".tan" ).show();
+  $( ".tan" ).show( "slow" );
 });
 
 $( "#chandry" ).click(function() {
   $( ".participant" ).hide();
-  $( ".chandry" ).show();
+  $( ".chandry" ).show( "slow" );
 });
 
 $( "#dzayed" ).click(function() {
   $( ".participant" ).hide();
-  $( ".dzayed" ).show();
+  $( ".dzayed" ).show( "slow" );
 });
