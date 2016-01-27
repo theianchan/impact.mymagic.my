@@ -1,0 +1,268 @@
+.what-we-did {
+  background-image: linear-gradient($background-gradient-top, $background-gradient-bottom);
+  text-align: center;
+  h2 {
+    color: white;
+  }
+}
+
+.time-boxes {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5em 0 0;
+  position: relative;
+  // timeline css
+  &:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    bottom: 626px;
+    background: white;
+    content: "";
+  }
+  .data-box {
+    position: relative;
+    border-radius: 8px;
+    background: $timebox-background;
+    max-width: 380px;
+    margin: 1.25em auto 7.5em;
+    padding: 2.5em 1.875em;
+    font-size: em(16px);
+    &.hover {
+      background: $timebox-background-highlight;
+      &:before {
+        border-color: transparent transparent transparent $timebox-background-highlight;
+      }
+      .ico {
+        color: $timebox-accent-highlight;
+        img {
+          display: none;
+        }
+        .hover {
+          display: inline;
+        }
+      }
+    }
+    .date {
+      right: auto;
+      left: 50%;
+      top: -100px;
+      margin: 0 0 0 -40px;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: $timebox-date-border;
+      background: white;
+      text-align: center;
+      font-size: 0.688em;
+      line-height: 80px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $timebox-date;
+      &:before {
+        content: "\e60c";
+        font-family: "icomoon";
+        position: absolute;
+        left: 17px;
+        top: 16px;
+        color: $timebox-date;
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+    .ico {
+      text-align: center;
+      font-size: 62px;
+      line-height: 70px;
+      color: $timebox-accent;
+      margin: 0 0 11px;
+      img {
+        vertical-align: top;
+      }
+      .hover {
+        display: none;
+      }
+    }
+    .icon-grill {
+      font-size: 87px;
+      margin: -10px 0 5px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .icon-idea {
+      font-size: 54px;
+    }
+    .icon-notebook {
+      font-size: 53px;
+    }
+    .icon-dashboard {
+      font-size: 74px;
+    }
+    .icon-folk, .icon-robot {
+      font-size: 74px;
+      margin: -10px 0 6px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+      color: $darkgrey;
+      margin: 0 0 15px;
+      font-weight: 600;
+    }
+    p {
+      margin: 0 0 19px;
+    }
+    .count {
+      font-size: 48px;
+      line-height: 50px;
+      font-weight: bold;
+      margin: 0 0 11px;
+    }
+    .btn-box {
+      text-align: center;
+      padding: 23px 0 0;
+    }
+    .btn {
+      display: inline-block;
+      vertical-align: top;
+      border: 2px solid $darkgrey;
+      font-size: 13px;
+      line-height: 15px;
+      text-decoration: none;
+      padding: 12px 12px 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  @media only screen and (min-width: 1123px) {
+    height: 7535px;
+    position: relative;
+    &:before {
+      margin-top: 20px;
+    }
+    .data-box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      .date {
+        left: 531px;
+        top: 0;
+      }
+      &:before {
+        position: absolute;
+        right: -19px;
+        top: 30px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 18px 0 18px 20px;
+        border-color: transparent transparent transparent $timebox-background;
+        content: "";
+      }
+      &.right {
+        left: auto;
+        right: 0;
+        &:before {
+          right: auto;
+          left: -19px;
+          border-width: 18px 20px 18px 0;
+          border-color: transparent $timebox-background transparent transparent;
+        }
+        &.hover:before {
+          border-color: transparent $timebox-background-highlight transparent transparent;
+        }
+        .date {
+          right: auto;
+          left: -149px;
+        }
+      }
+      &.box2 {
+        top: 150px;
+      }
+      &.box3 {
+        // 539 + 50
+        top: 589px;
+      }
+      &.box4 {
+        // 150 + 501 + 130
+        top: 781px;
+      }
+      &.box5 {
+        // 589 + 515 + 50
+        top: 1154px;
+      }
+      &.box6 {
+        // 781 + 483 + 130
+        top: 1394px;
+      }
+      &.box7 {
+        // 1154 + 569 + 50
+        top: 1773px;
+      }
+      &.box8 {
+        // 1394 + 613 + 130
+        top: 2137px;
+      }
+      &.box9 {
+        // 1773 + 637 + 50
+        top: 2460px;
+      }
+      &.box10 {
+        // 2137 + 507 + 130
+        top: 2774px;
+      }
+      &.box11 {
+        // 2460 + 569 + 50
+        top: 3079px;
+      }
+      &.box12 {
+        // 2774 + 577 + 130
+        top: 3481px;
+      }
+      &.box13 {
+        // 3079 + 599 + 130
+        top: 3808px;
+      }
+      &.box14 {
+        // 3481 + 521 + 130
+        top: 4132px;
+      }
+      &.box15 {
+        // 3808 + 549 + 130
+        top: 4487px;
+      }
+      &.box16 {
+        // 4132 + 497 + 130
+        top: 4759px;
+      }
+      &.box17 {
+        // 4487 + 575 + 130
+        top: 5192px;
+      }
+      &.box18 {
+        // 4759 + 645 + 130
+        top: 5534px;
+      }
+      &.box19 {
+        // 5192 + 545 + 130
+        top: 5867px;
+      }
+      &.box20 {
+        // 5534 + 497 + 130
+        top: 6161px;
+      }
+      &.box21 {
+        // 5867 + 473 + 130
+        top: 6470px;
+      }
+      &.box22 {
+        // 6161 + 519 + 130
+        top: 6810px;
+      }
+    }
+  }
+}

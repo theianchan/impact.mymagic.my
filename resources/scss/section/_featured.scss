@@ -1,0 +1,74 @@
+.featured {
+  background: $lightblue;
+  color: $white;
+  text-align: center;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+    text-decoration: none;
+    
+    transform: scale(1.02);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transform: scale(1.02);
+    -webkit-transition-duration: 250ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }
+
+  @include e(column) {
+    background: $darkgrey;
+    border-radius: $br;
+    border: 1px solid $blue--lighter;
+    padding: 0;
+
+    &.row {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      width: 95%;
+      margin: 0 2.5% 2.5%;
+      @media screen and (min-width: $medium) {
+        width: 31.11%;
+        margin: 1.11%;
+      }
+    }
+  }
+
+  @include e(header) {
+    border-radius: $br $br 0 0;
+    h3 {
+      width: 80%;
+      margin: em(50px) auto;
+      em {
+        font-size: em(24px);
+      }
+      @include font-smoothing;
+    }
+  }
+
+  @include e(image) {
+    min-height: em(300px);
+    border-radius: 0 0 $br $br;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $large) {
+      min-height: em(480px);
+    }
+    @include m(ma2015) {
+      background-image: url(img/callout-ma2015.jpg);
+      background-position: center;
+    }
+
+    @include m(sehati) {
+      background-image: url(img/callout-sehati.jpg);
+    }
+
+    @include m(map) {
+      background-image: url(img/callout-map.jpg);
+    }
+  }
+}

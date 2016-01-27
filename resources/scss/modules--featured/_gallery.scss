@@ -1,0 +1,14 @@
+%gallery {
+  background-color: $accent;
+  color: $white;
+  .gallery-row {
+    margin: em(60px) auto;
+    .columns {
+      padding: em(6px);
+      img {
+        border: 2px solid $white;
+        border-radius: $br--min;
+      }
+    }
+  }
+}

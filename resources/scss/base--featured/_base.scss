@@ -1,0 +1,95 @@
+body {
+  font-family: $body-sans-serif;
+  font-weight: $body--normal;
+  font-size: em($base__font-size);
+  line-height: 1.4;
+
+  background-color: $white;
+  color: $default;
+  
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $head-sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: $head--light;
+}
+
+h4, h5, h6 {
+  font-weight: $head--medium;
+}
+
+h1 {
+  font-size: em($h1__font-size);
+}
+
+h2 {
+  font-size: em($h2__font-size);
+}
+
+h3 {
+  font-size: em($h3__font-size);
+}
+
+h4 {
+  font-size: em($h4__font-size);
+}
+
+h5 {
+  font-size: em($h5__font-size);
+}
+
+h6 {
+  font-size: em($h6__font-size);
+}
+
+p,
+a,
+ul li,
+ol li {
+  font-family: $body-sans-serif;
+  font-weight: $body--normal;
+  font-size: em($base__font-size);
+  line-height: 1.4;
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+  font-weight: $head--semibold;
+}
+
+p em,
+a em,
+ul li em,
+ol li em {
+  font-weight: $body--bold;
+}
+
+hr {
+  width: em(50px);
+  border-bottom: 2px solid $default;
+  margin: em(25px) auto;
+}
+
+a {
+  color: $default;
+  text-decoration: underline;
+  transition-duration: $transition-duration;
+  -webkit-transition-duration: $transition-duration;
+}
+
+a:hover,
+a:active {
+  color: $accent;
+}

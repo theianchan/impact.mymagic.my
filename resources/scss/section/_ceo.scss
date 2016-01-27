@@ -1,0 +1,65 @@
+.ceo-note {
+  background: url(img/bg-entry-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $grey;
+  .holder {
+    display: table;
+    width: 100%;
+    .frame {
+      vertical-align: middle;
+      width: 100%;
+      display: table-cell;
+      padding: 8em 0 4em;
+    }
+    .frame2 {
+      max-width: $large;
+      margin: 0 auto;
+      padding: 0 1em;
+      text-align: center;
+    }
+    @media screen and (min-width: $large) {
+      height: auto !important;
+      .frame {
+        padding: 10em 0 6em;
+      }
+    }
+  }
+  .logo-box img {
+    width: 160px;
+  }
+  h1 {
+    font-size: em(40px);
+    margin: 0.5em 0 1em;
+  }
+  @media screen and (min-width: $large) {
+    .logo-box img {
+      width: 185px;
+    }
+    h1 { 
+      font-size: em(48px);
+    }
+  }
+  h2 {
+    font-size: em(24px); 
+    margin: 0;
+    font-weight: 600;
+  }
+  .note-text {
+    padding: 1em 1em 2.5em;
+    p {
+      font-size: em(15px); 
+    }
+  }
+  .btn-row {
+    padding: 1em 0 0;
+    a {
+      text-decoration: none;
+      color: $darkgrey;
+      font-size: em(26px);
+      @media screen and (min-width: $large) {
+        font-size: em(45px);
+      }
+    }
+  }
+}

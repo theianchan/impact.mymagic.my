@@ -1,0 +1,23 @@
+@import 'base/resets';
+
+@import 'utilities/config';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+@import 'base--featured/base';
+
+@import 'modules--featured/background-images';
+@import 'modules--featured/blockquotes';
+@import 'modules--featured/buttons';
+@import 'modules--featured/controls';
+@import 'modules--featured/fullscreen-carousel';
+@import 'modules--featured/gallery';
+@import 'modules--featured/instagram-testimonials';
+@import 'modules--featured/intro';
+@import 'modules--featured/panels';
+@import 'modules--featured/section';
+@import 'modules--featured/svg';
+
+@import 'section--featured/ma2015'; 
+@import 'section--featured/map';
+@import 'section--featured/sehati';

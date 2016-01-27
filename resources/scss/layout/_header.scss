@@ -1,0 +1,24 @@
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #d8d8d8;
+  .holder {
+    max-width: 1054px;
+    margin: 0 auto;
+    padding: 20px 15px 5px;
+    @media screen and (min-width: 768px) {
+      padding: 20px 15px 0;
+    }
+  }
+  .logo {
+    float: left;
+    margin: 0 11px 0 0;
+    img {
+      vertical-align: top;
+    }
+  }
+}

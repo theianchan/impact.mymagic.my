@@ -1,0 +1,97 @@
+.sehati {
+  @include e(intro) {
+    @extend %child-page-intro;
+  }
+
+  @include e(entry-hero) {
+    @extend %background--centered-small;
+    background-image: url(#{$path--css-img}/sehati-intro.jpg);
+  }
+
+  @include e(participant-quote) {
+    .svg-tile {
+      background-color: $pink;
+    }
+  }
+
+  @include e(profile) {
+    @extend %background--span;
+    background-color: $grey--x-light;
+    background-image: url(#{$path--css-img}/sehati-journey-bg.jpg);
+    .profile-lead {
+      margin-top: 35%;
+      margin-bottom: em(90px);
+      @media screen and (min-width: $large) {
+        margin-top: 75%;
+      }
+    }
+    .svg-tile {
+      background-color: $amber;
+      padding: 5px 10px 10px;
+    }
+    em {
+      color: $accent;
+    }
+  }
+
+  @include e(roadshows) {
+    background-color: $grey--x-light;
+    background-image: linear-gradient($grey--x-light, $white);
+    .roadshow-stop {
+      @extend %panel;
+      background-color: $white;
+      max-width: 704px;
+      margin: em(30px) auto em(90px);
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        color: $grey;
+        font-size: em(13px);
+        text-align: left;
+        margin: 0;
+        padding: em(15px, 13px);
+      }
+    }
+  }
+
+  @include e(gallery) {
+    @extend %gallery;
+    h3 {
+      margin-bottom: em(35px, $h3__font-size);
+    }
+    .svg-tile {
+      background-color: $purple;
+    }
+  }
+
+  @include e(testimonials) {
+    @extend %testimonials;
+    background-color: $grey--x-light;
+  }
+
+  @include e(footer) {
+    background-color: $grey--x-light;
+    background-image: linear-gradient($grey--x-light, $white);
+    .svg-tile {
+      background-color: $pink;
+    }
+    .button {
+      @extend %button--clear;
+    }
+    .button,
+    .return-link {
+      &:hover,
+      &:active {
+        color: $pink;
+        border-color: $pink;
+      }
+    }
+  }
+
+  @include e(exit-hero) {
+    @extend %background--centered;
+    background-color: $white;
+    background-image: url(#{$path--css-img}/sehati-end.jpg);
+  }
+}

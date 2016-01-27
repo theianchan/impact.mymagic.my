@@ -1,0 +1,33 @@
+.ff {
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 250ms;
+  -webkit-transition-timing-function: ease-in-out;
+
+  @include m(educating) {
+    background-image: url('img/ff-educate.jpg');
+  }
+
+  @include m(accelerating) {
+    background-image: url('img/ff-accelerate.jpg');
+  }
+
+  @include m(exposing) {
+    background-image: url('img/ff-expose.jpg');
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: $darkgrey;
+  }
+  @include e(title) {}
+
+  .ff__body {
+    display: none;
+  }
+  .ff__body.current {
+    display: block;
+  }
+}

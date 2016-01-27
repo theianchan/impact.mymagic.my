@@ -1,0 +1,23 @@
+%controls {
+  list-style: none;
+  li {
+    display: inline-block;
+    cursor: pointer;
+    margin: em(5px);
+    img {
+      width: 70px;
+      background-color: $white;
+      border: 4px solid $white;
+      border-radius: $br--round;
+    }
+    &:hover,
+    &:active {
+      transform: scale(1.05);
+      transition-duration: $transition-duration;
+      transition-timing-function: ease-in-out;
+      -webkit-transform: scale(1.2);
+      -webkit-transition-duration: $transition-duration;
+      -webkit-transition-timing-function: ease-in-out;
+    }
+  }
+}

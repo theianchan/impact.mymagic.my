@@ -1,6 +1,10 @@
+// WOW
+
+new WOW().init();
+
 // fullscreen-carousel
 
-var display = $( "#fullscreen-carousel" );
+var display = $( "#carousel-display" );
 
 $( "#content-1" ).click(function() {
   display.removeClass();
@@ -36,6 +40,16 @@ $( "#content-8" ).click(function() {
 });
 
 // testimonials
+
+$( "#may" ).click(function() {
+  $( ".participant" ).hide();
+  $( ".may" ).show( "slow" );
+});
+
+$( "#delvin" ).click(function() {
+  $( ".participant" ).hide();
+  $( ".delvin" ).show( "slow" );
+});
 
 $( "#nurul" ).click(function() {
   $( ".participant" ).hide();

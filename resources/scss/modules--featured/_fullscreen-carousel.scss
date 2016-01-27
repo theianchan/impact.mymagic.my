@@ -1,0 +1,19 @@
+%fullscreen-carousel {
+  background-color: $white;
+  padding-top: 0;
+  em {
+    color: $accent;
+  }
+}
+
+#carousel-display {
+  @extend %fullscreen-background-image;
+  background-color: $grey--x-light;
+  transition-duration: $transition-duration;
+  padding-bottom: 48.6%;
+}
+
+.carousel-controls {
+  @extend %controls;
+  margin-top: em(-35px);
+}
