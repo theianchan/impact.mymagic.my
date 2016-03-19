@@ -1,0 +1,58 @@
+.magicbot {
+  width: 100%;
+  max-width: 500px;
+  min-height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  input {
+        box-sizing: border-box;
+    width: auto;
+
+    -ms-box-sizing: border-box;
+     -o-box-sizing: border-box;
+  }
+  .row .message {
+    font-size: em(20px);
+    line-height: 1.5;
+    display: inline-block;
+    margin: 0 0.625rem em(16px) 0.625rem;
+    padding: em(12px) em(24px);
+    color: $grey;
+    border-radius: 35px;
+    background-color: $grey--light;
+  }
+  .row--answers {
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+    .message {
+      margin-left: 0;
+      cursor: pointer;
+      transition-duration: 250ms;
+      color: $white;
+      background-color: #00B0FF;
+      &:first-of-type {
+        margin-left: 0.625rem;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: rgba(#00B0FF, 0.85);
+      }
+    }
+    form .message {
+      height: auto;
+      cursor: text;
+      border: none;
+      box-shadow: none;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #00B0FF;
+      }
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: #80D8FF;
+  }
+}

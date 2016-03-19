@@ -1,23 +1,23 @@
-@import 'base/resets';
+@import 'featured__base/resets';
 
 @import 'utilities/config';
 @import 'utilities/functions';
 @import 'utilities/mixins';
 
-@import 'base--featured/base';
+@import 'featured__base/base';
 
-@import 'modules--featured/background-images';
-@import 'modules--featured/blockquotes';
-@import 'modules--featured/buttons';
-@import 'modules--featured/controls';
-@import 'modules--featured/fullscreen-carousel';
-@import 'modules--featured/gallery';
-@import 'modules--featured/instagram-testimonials';
-@import 'modules--featured/intro';
-@import 'modules--featured/panels';
-@import 'modules--featured/section';
-@import 'modules--featured/svg';
+@import 'featured__modules/background-images';
+@import 'featured__modules/blockquotes';
+@import 'featured__modules/buttons';
+@import 'featured__modules/controls';
+@import 'featured__modules/fullscreen-carousel';
+@import 'featured__modules/gallery';
+@import 'featured__modules/instagram-testimonials';
+@import 'featured__modules/intro';
+@import 'featured__modules/panels';
+@import 'featured__modules/section';
+@import 'featured__modules/svg';
 
-@import 'section--featured/ma2015'; 
-@import 'section--featured/map';
-@import 'section--featured/sehati';
+@import 'featured__section/ma2015'; 
+@import 'featured__section/map';
+@import 'featured__section/sehati';

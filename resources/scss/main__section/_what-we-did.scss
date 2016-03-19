@@ -1,0 +1,272 @@
+.what-we-did {
+  text-align: center;
+  color: $white;
+  background-image: linear-gradient($timebox__gradient--top, $timebox__gradient--bottom);
+  @media (min-width: 1123px) {
+    padding-bottom: 0;
+  }
+  .title-group h2,
+  .title-group h4 {
+    font-weight: $head--medium;
+  }
+}
+
+.time-boxes {
+  position: relative;
+  max-width: 1061px;
+  margin: $mg--md auto 0;
+  padding-top: 300px;
+  .year-marker {
+    line-height: 150px;
+    position: relative;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    color: $timebox__icon;
+    border-radius: $br--round;
+    background-color: $white;
+  }
+  .year--2014 {
+    margin: -300px auto 150px -75px;
+  }
+  .year--2015 {
+    margin: -60px auto 150px -75px;
+  }
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: $br--round;
+    width: 3px;
+    margin-top: 0;
+    margin-left: -3px;
+    content: '';
+    background: $white;
+  }
+  .data-box {
+    font-size: em(15px);
+    position: relative;
+    max-width: 380px;
+    margin: $mg--sm auto $mg--x-lg;
+    padding: $mg--md;
+    color: $grey--dark;
+    border-radius: $br;
+    background-color: $timebox__background;
+    h3 {
+      font-weight: $head--semibold;
+      margin: 0 0 $mg--sm;
+    }
+    p {
+      line-height: 1.5;
+      margin: 0 0 $mg--md;
+    }
+    .count {
+      font-size: em(48px);
+      font-weight: $body--bold;
+      line-height: 1;
+      margin: 0 0 $mg--xs;
+    }
+    .btn {
+      margin-top: $mg--sm;
+      color: $grey;
+      border: 2px solid $grey;
+      background-color: transparent;
+
+      @extend %button--block;
+    }
+    &:hover {
+      background-color: $timebox__background--highlight;
+      &:before {
+        border-color: transparent transparent transparent $timebox__background--highlight;
+      }
+      .btn {
+        color: $white;
+        background-color: $grey;
+      }
+      .ico {
+        color: $timebox__icon--highlight;
+        .plain {
+          display: none;
+        }
+        .hover {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    &.box15:hover .ico .hover {
+      margin-top: -1px;
+      padding-bottom: 1px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1123px) {
+  .time-boxes {
+    height: 6818px + 625px + 50px + 90px;
+    .year-marker {
+      position: absolute;
+    }
+    .year--2015 {
+      top: 3109px + 15px;
+      margin-top: 0;
+    }
+    .data-box {
+      position: absolute;
+      top: 180px;
+      left: 0;
+      .date {
+        top: 0;
+        left: 531px;
+      }
+      &:before {
+        position: absolute;
+        top: 30px;
+        right: -19px;
+        width: 0;
+        height: 0;
+        content: '';
+        border-width: 19px 0 19px 19px;
+        border-style: solid;
+        border-color: transparent transparent transparent $timebox__background;
+      }
+      &.right {
+        right: 0;
+        left: auto;
+        .date {
+          right: auto;
+          left: -149px;
+        }
+        &:before {
+          right: auto;
+          left: -19px;
+          border-width: 19px 19px 19px 0;
+          border-color: transparent $timebox__background transparent transparent;
+        }
+        &:hover:before {
+          border-color: transparent $timebox__background--highlight transparent transparent;
+        }
+      }
+      &.box2 {
+        top: 330px;
+      }
+      &.box4 {
+        top: 553px + 330px + 50px * 1;
+      }
+      &.box6 {
+        top: 538px + 553px + 330px + 50px * 2;
+      }
+      &.box8 {
+        top: 659px + 538px + 553px + 330px + 50px * 3;
+      }
+      &.box10 {
+        top: 571px + 659px + 538px + 553px + 330px + 50px * 4;
+      }
+      &.box12 {
+        top: 582px + 571px + 659px + 538px + 553px + 330px + 50px * 5;
+      }
+      &.box14 {
+        top: 581px + 582px + 571px + 659px + 538px + 553px + 330px + 50px * 6;
+      }
+      &.box16 {
+        top: 625px + 581px + 582px + 571px + 659px + 538px + 553px + 330px + 50px * 7;
+      }
+      &.box18 {
+        top: 695px + 625px + 581px + 582px + 571px + 659px + 538px + 553px + 330px + 50px * 8;
+      }
+      &.box20 {
+        top: 603px + 695px + 625px + 581px + 582px + 571px + 659px + 538px + 553px + 330px + 50px * 9;
+      }
+      &.box22 {
+        top: 581px + 603px + 695px + 625px + 581px + 582px + 571px + 659px + 538px + 553px + 330px + 50px * 10;
+      }
+      &.box3 {
+        top: 516px + 180px + 50px * 1;
+      }
+      &.box5 {
+        top: 491px + 516px + 180px + 50px * 2;
+      }
+      &.box7 {
+        top: 538px + 491px + 516px + 180px + 50px * 3;
+      }
+      &.box9 {
+        top: 595px + 538px + 491px + 516px + 180px + 50px * 4;
+      }
+      &.box11 {
+        top: 539px + 595px + 538px + 491px + 516px + 180px + 50px * 5;
+      }
+      &.box13 {
+        top: 651px + 539px + 595px + 538px + 491px + 516px + 180px + 50px * 6;
+      }
+      &.box15 {
+        top: 629px + 651px + 539px + 595px + 538px + 491px + 516px + 180px + 50px * 7;
+      }
+      &.box17 {
+        top: 581px + 629px + 651px + 539px + 595px + 538px + 491px + 516px + 180px + 50px * 8;
+      }
+      &.box19 {
+        top: 651px + 581px + 629px + 651px + 539px + 595px + 538px + 491px + 516px + 180px + 50px * 9;
+      }
+      &.box21 {
+        top: 537px + 651px + 581px + 629px + 651px + 539px + 595px + 538px + 491px + 516px + 180px + 50px * 10;
+      }
+    }
+  }
+}
+
+.what-we-did {
+  .date {
+    font-size: em(11px);
+    font-weight: $body--bold;
+    line-height: 80px;
+    position: absolute;
+    top: -100px;
+    right: auto;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 0 0 -40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $timebox__icon;
+    border: 4px solid $white;
+    border-radius: $br--round;
+    background: $white;
+    &:before {
+      font-family: 'icomoon';
+      font-size: 40px;
+      line-height: 40px;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      content: '\e60c';
+      color: $timebox__icon;
+    }
+  }
+}
+
+.what-we-did {
+  .ico {
+    font-size: 60px;
+    line-height: 1;
+    margin: $mg--xs 0 $mg--sm;
+    text-align: center;
+    color: $timebox__icon;
+    .plain {
+      display: block;
+      margin: 0 auto;
+    }
+    .hover {
+      display: none;
+    }
+  }
+  .icon-grill,
+  .icon-dashboard,
+  .icon-robot {
+    font-size: 72px;
+  }
+  .icon-idea,
+  .icon-notebook {
+    font-size: 54px;
+  }
+}

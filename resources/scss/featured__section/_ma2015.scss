@@ -1,0 +1,140 @@
+.ma2015 {
+  @include e(footer) {
+    background-color: $grey--x-light;
+    background-image: url(#{$path--css-img}/ma2015-background.jpg);
+
+    @extend %background--button;
+    .svg-tile {
+      background-color: $pink;
+    }
+    .button {
+      @extend %button--clear;
+    }
+  }
+  @include e(testimonials) {
+    background-color: $grey--x-light;
+
+    @extend %testimonials;
+    em {
+      color: $pink;
+    }
+  }
+  @include e(callout) {
+    background: linear-gradient($white, $grey--x-light);
+    background-color: $grey--x-light;
+
+    @include m(career) {
+      background-color: $white;
+      em {
+        color: $blue--light;
+      }
+    }
+    @include m(clinics) {
+      color: $white;
+      background-color: $blue--dark;
+      hr {
+        border-color: $white;
+      }
+      em {
+        color: $yellow;
+      }
+    }
+    .columns {
+      padding: 0 em(6px);
+      .row {
+        margin: em(6px) auto;
+        padding: 0;
+
+        @extend %panel;
+        .columns:nth-child(1) {
+          overflow: hidden;
+          padding: 0;
+        }
+        .columns:nth-child(2) {
+          padding: em(25px);
+        }
+        @media screen and (min-width: $max-width) {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display:         flex;
+
+          -webkit-align-items: center;
+                  align-items: center;
+          -ms-flex-align: center;
+        }
+      }
+    }
+  }
+  @include e(fullscreen-carousel) {
+    padding-top: 0;
+
+    @extend %fullscreen-carousel;
+    .content-1 {
+      background-image: url(#{$path--css-img}/ma2015-content-1.jpg);
+    }
+    .content-2 {
+      background-image: url(#{$path--css-img}/ma2015-content-2.jpg);
+    }
+    .content-3 {
+      background-image: url(#{$path--css-img}/ma2015-content-3.jpg);
+    }
+    .content-4 {
+      background-image: url(#{$path--css-img}/ma2015-content-4.jpg);
+    }
+    .content-5 {
+      background-image: url(#{$path--css-img}/ma2015-content-5.jpg);
+    }
+    .content-6 {
+      background-image: url(#{$path--css-img}/ma2015-content-6.jpg);
+    }
+    .content-7 {
+      background-image: url(#{$path--css-img}/ma2015-content-7.jpg);
+    }
+    .content-8 {
+      background-image: url(#{$path--css-img}/ma2015-content-8.jpg);
+    }
+    .carousel-body {
+      margin-top: em(45px);
+    }
+    .svg-tile {
+      margin: em(60px) em(5px);
+    }
+    .tile--product {
+      background-color: $purple;
+    }
+    .tile--marketing {
+      background-color: $blue;
+    }
+    .tile--fundraising {
+      background-color: $yellow;
+    }
+    .tile--culture {
+      background-color: $cyan;
+    }
+  }
+  @include e(gallery) {
+    @extend %gallery;
+    .svg-tile {
+      background-color: $white;
+      #Filled_Icons {
+        path,
+        circle,
+        rect,
+        polygon {
+          fill: $blue--light !important;
+        }
+      }
+    }
+  }
+  @include e(entry-hero) {
+    font-size: em(18px);
+    color: $white;
+    background-image: linear-gradient($black--80, $black--20), url(#{$path--css-img}/ma2015-intro-bg.jpg);
+    text-shadow: $shadow--heavy;
+
+    @extend %background--text;
+  }
+  @include e(intro) {
+    @extend %child-page-intro;
+  }
+}

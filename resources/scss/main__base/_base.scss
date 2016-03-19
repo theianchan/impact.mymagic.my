@@ -1,0 +1,148 @@
+body {
+  font-family: $body-sans-serif;
+  font-size: em(16px);
+  color: $grey--dark;
+  background: $white;
+  margin-top: 0;
+
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $head-sans-serif;
+  line-height: 1.25;
+  margin: 0 0 1.25em;
+  font-weight: $head--semibold;
+}
+
+h1 {
+  font-size: em(34px);
+  font-weight: $head--light;
+  @media (min-width: $medium) {
+    font-size: em(48px);
+  }
+}
+
+h2 {
+  font-size: em(28px);
+  font-weight: $head--light;
+  @media (min-width: $medium) {
+    font-size: em(36px);
+  }
+}
+
+h3 {
+  font-size: em(22px);
+  font-weight: $head--medium;
+}
+
+h4 {
+  font-size: em(20px);
+  font-weight: $head--light;
+}
+
+h5 {
+  font-size: em(18px);
+  font-weight: $head--semibold;
+}
+
+h6 {
+  font-size: em(16px);
+  font-weight: $head--semibold;
+}
+
+p {
+  font-family: $body-sans-serif;
+  font-size: em(16px);
+  em {
+    font-weight: $body--bold;
+  }
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+hr {
+  width: 50px;
+  margin: $mg--sm auto;
+  border-bottom: 2px solid;
+}
+
+a {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+input,
+textarea,
+select {
+  font-family: $body-sans-serif;
+  vertical-align: middle;
+  color: $grey--dark;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+textarea {
+  margin: 0;
+  padding: 4px 8px;
+  border: 1px solid $grey--light;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+input[type='text']:focus,
+input[type='tel']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+textarea:focus {
+  border-color: $grey;
+}

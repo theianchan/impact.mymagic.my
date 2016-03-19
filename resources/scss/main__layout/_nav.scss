@@ -1,0 +1,57 @@
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.title-bar,
+.top-bar {
+  color: $grey--light;
+  border-bottom: 1px solid $grey--light;
+  background: rgba($white, 0.95);
+  box-shadow: $shadow--light;
+}
+
+.title-bar {
+  padding: $mg--sm;
+  .menu-icon {
+    float: right;
+    margin: 7px 14px 7px 0;
+  }
+  .menu-icon:focus {
+    outline: none;
+  }
+  .menu-icon::after {
+    background: $grey--light;
+    box-shadow: 0 7px 0 $grey--light, 0 14px 0 $grey--light;
+  }
+  .title-bar-title img {
+    min-width: 94px;
+    margin-left: 14px;
+    padding: 7px 0;
+  }
+}
+
+.top-bar {
+  padding: 7px;
+  ul {
+    width: 100%;
+    background-color: transparent;
+    @media screen and (min-width: $large) {
+      width: auto;
+    }
+    li a {
+      font-size: em(15px);
+      color: rgba($grey, 0.5);
+      &:hover,
+      &:focus {
+        color: $grey;
+      }
+    }
+  }
+  .menu>li:not(.menu-text)>a {
+    padding: 14px 21px;
+  }
+}

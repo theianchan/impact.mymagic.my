@@ -1,0 +1,31 @@
+.faq {
+  background-color: $grey--dark;
+  color: $white;
+  .accordion {
+    margin-top: $mg--md;
+    border: 1px solid $white;
+    border-radius: $br;
+    overflow: hidden;
+    background-color: $white;
+  }
+  .accordion-title {
+    font-size: em(16px);
+    line-height: 1.5;
+    padding: $mg--sm $mg--md;
+    color: $white;
+    background-color: rgba($indigo, .85);
+    &:before {
+      content: '';
+    }
+    &:hover,
+    &:focus,
+    &[aria-selected=true] {
+      background-color: rgba($indigo, 1);
+    }
+  }
+  .accordion-content {
+    font-size: em(15px);
+    padding: $mg--md;
+    color: rgba($grey, 0.9);
+  }
+}

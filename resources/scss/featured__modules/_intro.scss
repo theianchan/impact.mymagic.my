@@ -1,0 +1,18 @@
+%child-page-intro {
+  color: $white;
+  background-color: $black;
+  .date {
+    font-size: em(13px);
+    margin-bottom: em(15px, 13px);
+    text-transform: uppercase;
+  }
+  hr {
+    border-color: $white;
+  }
+  h3 {
+    margin-bottom: em(25px, $h3__font-size);
+  }
+  p {
+    font-size: em(15px);
+  }
+}

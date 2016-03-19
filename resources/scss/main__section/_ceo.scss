@@ -1,0 +1,52 @@
+.ceo-note {
+  color: $grey;
+  background-color: $white;
+  background-image: url('../img/header-background.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  .ceo-note__logo {
+    width: 160px;
+    margin-top: $mg--x-lg;
+  }
+  .ceo-note__title {
+    margin-top: $mg--md;
+    margin-bottom: $mg--xs;
+  }
+  .ceo-note__subtitle {
+    font-size: em(24px);
+  }
+  .ceo-note__text {
+    font-size: em(15px);
+    margin-bottom: $mg--md;
+  }
+  ul {
+    list-style: none;
+  }
+  .button {
+    margin-top: $mg--md;
+    margin-bottom: $mg--lg;
+
+    @extend %button;
+  }
+  @media (min-width: $medium) {
+    .ceo-note__logo {
+      margin-top: $mg--xx-lg;
+    }
+    .ceo-note__text {
+      margin-bottom: $mg--lg;
+    }
+  }
+}
+
+.ceo-note__modal {
+  padding: $mg--lg 0;
+  color: $white;
+  background-color: $blue-grey;
+  img:first-child {
+    margin-bottom: $mg--sm;
+    border: 3px solid $white;
+    border-radius: $br--round;
+    background-color: $white;
+  }
+}

@@ -1,0 +1,23 @@
+.bq {
+  font-family: $head-sans-serif;
+  font-size: em(16px);
+  font-weight: $head--light;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 0;
+  color: $default;
+  border-left: none;
+  span {
+    font-size: 2em;
+    line-height: 1.25;
+    display: block;
+    margin: em(8px) 0;
+  }
+  cite {
+    font-size: em(16px);
+    margin-top: em(8px);
+    color: $default;
+  }
+}

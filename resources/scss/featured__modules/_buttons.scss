@@ -1,0 +1,21 @@
+%button--clear {
+  font-family: $head-sans-serif;
+  font-size: em(18px);
+  font-weight: $head--medium;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: em(35px, 18px) auto em(15px, 18px);
+  padding: em(15px, 18px) em(25px, 18px);
+  text-decoration: none;
+  color: $default;
+  border: 2px solid $default;
+  border-radius: $br;
+  background-color: $white--20;
+  &:hover,
+  &:active {
+    color: $accent;
+    border-color: $accent;
+    background-color: $white--80;
+  }
+}

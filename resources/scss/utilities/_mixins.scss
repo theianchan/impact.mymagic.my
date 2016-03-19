@@ -1,8 +1,9 @@
 @mixin e($element) {
-	&__#{$element} {
+  &__#{$element} {
     @content;
   }
 }
+
 @mixin m($modifier) {
   &--#{$modifier} {
     @content;
@@ -10,12 +11,80 @@
 }
 
 @mixin font-smoothing {
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @mixin linear-gradient($direction, $color-stops...) {
-	background: nth(nth($color-stops, 1), 1);
-	background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-	background: linear-gradient($direction, $color-stops);
+  background: nth(nth($color-stops, 1), 1);
+  background: linear-gradient($direction, $color-stops);
+}
+
+%button {
+  font-family: $head-sans-serif;
+  font-size: em(13px);
+  font-weight: $head--bold;
+  line-height: 1;
+  padding: 16px 36px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  background-color: $grey--dark;
+  &:hover,
+  &:focus {
+    color: $white;
+    outline: none;
+    background-color: $grey;
+  }
+}
+
+
+%button--block {
+  @extend %button;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+%tab-button--blue {
+  font-family: $head-sans-serif;
+  font-size: em(15px);
+  font-weight: $head--medium;
+  line-height: 1;
+  padding: 16px 36px;
+  text-decoration: none;
+  color: $blue--light;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  &:hover,
+  &:focus {
+    outline: none;
+    background: rgba($blue--light, 0.1);
+  }
+  &[aria-selected=true] {
+    color: $blue--light;
+    border: 1px solid $blue--light;
+    background-color: transparent;
+  }
+}
+
+.svg-tile {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  background-color: $grey;
+  border-radius: $br;
+  margin-bottom: 15px;
+  #Filled_Icons {
+    path,
+    circle,
+    rect,
+    polygon {
+      fill: $white !important;
+    }
+  }
 }

@@ -1,0 +1,94 @@
+.sehati {
+  @include e(exit-hero) {
+    background-color: $white;
+    background-image: url(#{$path--css-img}/sehati-end.jpg);
+
+    @extend %background--centered;
+  }
+  @include e(footer) {
+    background-color: $grey--x-light;
+    background-image: linear-gradient($grey--x-light, $white);
+    .svg-tile {
+      background-color: $pink;
+    }
+    .button {
+      @extend %button--clear;
+    }
+    .button,
+    .return-link {
+      &:hover,
+      &:active {
+        color: $pink;
+        border-color: $pink;
+      }
+    }
+  }
+  @include e(testimonials) {
+    background-color: $grey--x-light;
+
+    @extend %testimonials;
+  }
+  @include e(gallery) {
+    @extend %gallery;
+    h3 {
+      margin-bottom: em(35px, $h3__font-size);
+    }
+    .svg-tile {
+      background-color: $purple;
+    }
+  }
+  @include e(roadshows) {
+    background-color: $grey--x-light;
+    background-image: linear-gradient($grey--x-light, $white);
+    .roadshow-stop {
+      max-width: 704px;
+      margin: em(30px) auto em(90px);
+      background-color: $white;
+
+      @extend %panel;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        font-size: em(13px);
+        margin: 0;
+        padding: em(15px, 13px);
+        text-align: left;
+        color: $grey;
+      }
+    }
+  }
+  @include e(profile) {
+    background-color: $grey--x-light;
+    background-image: url(#{$path--css-img}/sehati-journey-bg.jpg);
+
+    @extend %background--span;
+    .profile-lead {
+      margin-top: 35%;
+      margin-bottom: em(90px);
+      @media screen and (min-width: $large) {
+        margin-top: 75%;
+      }
+    }
+    .svg-tile {
+      padding: 5px 10px 10px;
+      background-color: $yellow;
+    }
+    em {
+      color: $accent;
+    }
+  }
+  @include e(participant-quote) {
+    .svg-tile {
+      background-color: $pink;
+    }
+  }
+  @include e(entry-hero) {
+    background-image: url(#{$path--css-img}/sehati-intro.jpg);
+
+    @extend %background--centered-small;
+  }
+  @include e(intro) {
+    @extend %child-page-intro;
+  }
+}

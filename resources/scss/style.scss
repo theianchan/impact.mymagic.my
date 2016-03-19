@@ -1,20 +1,25 @@
-@import 'base/resets';
+@import 'main__base/resets';
 
 @import 'utilities/config';
 @import 'utilities/functions';
 @import 'utilities/mixins';
 
-@import 'base/base';
-@import 'base/icons';
+@import 'main__base/base';
+@import 'main__base/icons';
 
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/nav';
-@import 'layout/section';
+@import 'main__layout/footer';
+@import 'main__layout/header';
+@import 'main__layout/nav';
+@import 'main__layout/section';
 
-@import 'section/ceo';
-@import 'section/core';
-@import 'section/featured';
-@import 'section/featuredfull';
-@import 'section/founding';
-@import 'section/whatwedid';
+@import 'main__section/ceo';
+@import 'main__section/startups';
+@import 'main__section/catalyst';
+@import 'main__section/chosen-ones';
+@import 'main__section/history-channel';
+@import 'main__section/what-we-did';
+@import 'main__section/love-notes';
+@import 'main__section/team';
+@import 'main__section/partners';
+@import 'main__section/faq';
+@import 'main__section/magicbot';

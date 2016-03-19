@@ -1,0 +1,94 @@
+.magical-team {
+  color: $white;
+  background-color: $yellow;
+  .team__illustrations {
+    margin-top: $mg--md;
+    img {
+      margin-bottom: $mg--md;
+    }
+    @media (min-width: $medium) {
+      img {
+        margin-bottom: 0;
+      }
+      .row {
+        margin-top: $mg--sm;
+        margin-bottom: $mg--md;
+      }
+    }
+  }
+  .team__faces {
+    font-size: em(18px);
+    margin-top: $mg--md;
+    .text-center {
+      .column {
+        margin-top: $mg--md;
+        margin-bottom: $mg--md;
+      }
+      p {
+        font-family: $head-sans-serif;
+        font-size: em(15px);
+        font-weight: $head--semibold;
+        line-height: 1.4;
+        margin-bottom: $mg--xs;
+        &:first-of-type {
+          font-size: em(18px);
+          font-weight: $head--bold;
+        }
+      }
+      img {
+        margin-bottom: $mg--sm;
+        border: 3px solid $white;
+        border-radius: $br--round;
+        background-color: $white;
+        box-shadow: 0 2px 0 rgba($grey, .25);
+      }
+    }
+  }
+  .true-facts {
+    margin-top: $mg--md;
+    margin-bottom: $mg--md;
+    @media (min-width: $large) {
+      margin-top: $mg--md * 2;
+      margin-bottom: $mg--md * 2;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: $head--medium;
+      padding: $mg--md;
+      color: $grey;
+      border-radius: $br;
+      background-color: $white;
+      box-shadow: 0 2px 0 rgba($grey, .25);
+    }
+    span {
+      display: none;
+    }
+    a {
+      line-height: 1.4;
+      position: relative;
+      display: inline-block;
+      padding-right: $mg--md + 18px + $mg--sm;
+      background-color: rgba($blue, 1);
+      box-shadow: 0 2px 0 rgba($blue--dark, .65);
+
+      @extend %button;
+      &:hover,
+      &:focus {
+        background-color: rgba($blue, 1);
+      }
+      &::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 18px;
+        height: 14px;
+        margin-top: - 14px / 2;
+        margin-right: $mg--md;
+        content: ' ';
+        background-image: url('../img/tweet-icon.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

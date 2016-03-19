@@ -1,0 +1,46 @@
+.section--padded {
+  padding: $mg--lg 0;
+}
+
+.section--band {
+  padding: $mg--lg 0;
+  color: $white;
+  background-color: $blue;
+  h2 {
+    margin: $mg--sm 0;
+  }
+  h4 {
+    margin: 0;
+  }
+  a {
+    display: inline-block;
+    margin-top: $mg--md;
+
+    @extend %button;
+  }
+}
+
+.title-group {
+  h2,
+  h3,
+  h4,
+  p {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (min-width: $medium) {
+      width: 75%;
+    }
+    @media screen and (min-width: $large) {
+      width: 51%;
+    }
+    &:first-child {
+      margin-top: $mg--md;
+      margin-bottom: $mg--sm;
+    }
+    &:last-child {
+      margin-bottom: $mg--md;
+    }
+  }
+}

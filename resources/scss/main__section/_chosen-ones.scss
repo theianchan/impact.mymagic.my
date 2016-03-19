@@ -1,0 +1,213 @@
+.card-container {
+  margin-bottom: 30px;
+
+  -webkit-perspective: 800px;
+       -o-perspective: 800px;
+          perspective: 800px;
+}
+
+.card-container:not(.manual-flip):hover .card,
+.card-container.hover.manual-flip .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-container.static:hover .card,
+.card-container.static.hover .card {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.card {
+  position: relative;
+  transition: -webkit-transform 0.5s;
+  transition:         transform 0.5s;
+  transition:         transform 0.5s, -webkit-transform 0.5s;
+
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  z-index: 3;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .front,
+  .back {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+  }
+  .back {
+    visibility: hidden;
+    -ms-transition: all 0.2s cubic-bezier(0.92, 0.01, 0.83, 0.67);
+  }
+  .front {
+    z-index: 4;
+  }
+  .card-container:not(.manual-flip):hover .back,
+  .card-container.manual-flip.hover .back {
+    z-index: 5;
+    visibility: visible;
+  }
+}
+
+.card{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 4px;
+    color: #444444;
+}
+.card-container, .front, .back {
+  width: 100%;
+  height: 420px;
+  border-radius: 4px;
+}
+.card .cover{
+    height: 105px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+.card .cover img{
+    width: 100%;
+}
+
+.chosen-ones {
+  color: $white;
+  background-color: $grey--x-dark;
+  .chosen-ones__cards-row {
+    margin-top: $mg--md;
+  }
+  .card-container,
+  .front,
+  .back {
+    height: 520px;
+    border-radius: $br;
+  }
+  .front {
+    overflow: hidden;
+    border: 1px solid $white;
+    background-color: $grey--x-dark;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .back {
+    color: $white;
+    .row {
+      height: 100%;
+    }
+    .svg-tile {
+      margin-bottom: $mg--md;
+      background-color: $white;
+    }
+    h2 {
+      margin-bottom: $mg--sm;
+    }
+    h4 {
+      font-weight: $head--medium;
+      margin-bottom: $mg--md;
+    }
+    .button {
+      margin-top: $mg--md;
+      background-color: $white;
+
+      @extend %button--block;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $white;
+      }
+    }
+  }
+  .card--ma2015 {
+    .back {
+      background-color: $yellow;
+    }
+    .front {
+      border-color: $yellow;
+      background-image: url(img/callout-ma2015.jpg);
+    }
+    .back {
+      .svg-tile {
+        #Filled_Icons {
+          path,
+          circle,
+          rect,
+          polygon {
+            fill: $yellow !important;
+          }
+        }
+      }
+      .button {
+        color: $yellow;
+      }
+    }
+  }
+  .card--map {
+    .back {
+      background-color: $pink;
+    }
+    .front {
+      border-color: $pink;
+      background-image: url(img/callout-map.jpg);
+    }
+    .back {
+      .svg-tile {
+        background-color: white;
+        #Filled_Icons {
+          path,
+          circle,
+          rect,
+          polygon {
+            fill: $pink !important;
+          }
+        }
+      }
+      .button {
+        color: $pink;
+      }
+    }
+  }
+  .card--sehati {
+    .back {
+      background-color: $blue;
+    }
+    .front {
+      border-color: $blue;
+      background-image: url(img/callout-sehati.jpg);
+    }
+    .back {
+      .svg-tile {
+        background-color: white;
+        #Filled_Icons {
+          path,
+          circle,
+          rect,
+          polygon {
+            fill: $blue !important;
+          }
+        }
+      }
+      .button {
+        color: $blue;
+      }
+    }
+  }
+}

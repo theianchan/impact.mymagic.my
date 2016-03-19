@@ -1,127 +1,108 @@
-// ==========================================================================
-// Global Config
-// ==========================================================================
-
 // Font Stacks
 
-$head-sans-serif	: "Raleway", "Helvetica", sans-serif;
-$body-sans-serif	: "Open Sans", "Helvetica", sans-serif;
+$head-sans-serif               : "Raleway", "Helvetica", sans-serif;
+$body-sans-serif               : "Open Sans", "Helvetica", sans-serif;
 
 // Font Weights
 
-$head--light			: 300;
-$head--medium			: 500;
-$head--semibold		: 600;
+$head--light                   : 300;
+$head--medium                  : 500;
+$head--semibold                : 600;
+$head--bold                    : 700;
 
-$body--normal			: 400;
-$body--bold				: 700;
+$body--normal                  : 400;
+$body--bold                    : 700;
 
 // Font Sizes
 
-$h1__font-size		: 48px;
-$h2__font-size		: 32px;
-$h3__font-size		: 24px;
-$h4__font-size		: 32px;
-$h5__font-size		: 24px;
-$h6__font-size		: 20px;
+$h1__font-size                 : 48px;
+$h2__font-size                 : 32px;
+$h3__font-size                 : 24px;
+$h4__font-size                 : 32px;
+$h5__font-size                 : 24px;
+$h6__font-size                 : 20px;
 
-$base__font-size	: 16px;
-
-// Legacy Color Mess
-
-$off-white--blended: #eeeeee;
-$offwhite: #dddddd;
-$darkgrey: #333333;
-$grey--darker: #333333;
-
-$lightblue: #00d2ff;
-$lightpink: #E66A6F;
-$pink: #E91E63;
-$amber: #FFC107;
-$purple: #9C27B0;
-
-$blue--darker: #192132;
-$blue--light: #00d2ff;
-$blue--lighter: #daf6fc;
-
-$background-gradient-top: #00d2ff;
-$background-gradient-bottom: #3a7bd5;
-
-$timebox-accent: #1BC1DB;
-$timebox-accent-highlight: #f8a61b;
-$timebox-background: #daf6fc;
-$timebox-background-highlight: white;
-$timebox-date: #1BC1DB;
-$timebox-date-border: 4px solid white;
+$base__font-size               : 16px;
 
 // Base Colors
 
-$white						: #FFFFFF;
-$grey--x-light		: #EEEEEE;
-$grey--light			: #DDDDDD;
-$grey							: #484848;
-$grey--dark				: #333333;
-$grey--x-dark			: #222222;
-$black						: #0B0B0B;
+$white                         : #FFFFFF;
+$grey--x-light                 : #F2F2F2;
+$grey--light                   : #DDDDDD;
+$grey                          : #484848;
+$grey--dark                    : #333333;
+$grey--x-dark                  : #222222;
+$black                         : #0B0B0B;
 
-// Primary Color
 
-$blue--dark				: #192132;
-$blue							: #3A7BD5; // gradient 1
-$blue--light			: #00D2FF; // gradient 2
-$blue--x-light		: #DAF6FC; // timebox background
-$blue--backup			: #1BC1DB; // timebox in PNGs
+// Material Design Colors
 
-// Secondary Colors
+$red                           : #F44336;
+$orange                        : #FF5722;
+$green                         : #4CAF50;
+$cyan                          : #00BCD4;
+$blue--light                   : #00D2FF;
+$blue--dark                    : #192132;
+$pink                          : #E91E63;
+$pink--light                   : #EC407A;
+$purple                        : #9C27B0;
 
-$pink							: #E91E63;
-$pink--light			: #E66A6F;
+// Background Colors
 
-$purple						: #9C27B0;
-$teal							: #00BCD4;
-
-$amber						: #F8A61B;
+$yellow                        : #FFC107;
+$blue                          : #2196F3;
+$teal                          : #009688;
+$indigo                        : #3F51B5;
+$blue-grey                     : #607D8B;
 
 // Color Scheme
 
-$default					: $grey--dark;
-$accent						: $blue--light;
+$default                       : $grey--dark;
+$accent                        : $blue--light;
+
+$timebox__background           : #DAF6FC;
+$timebox__background--highlight: #FFFFFF;
+$timebox__icon                 : #1BC1DB;
+$timebox__icon--highlight      : #F8A61B;
+$timebox__gradient--top        : $blue--light;
+$timebox__gradient--bottom     : $blue;
 
 // Shadows
 
-$white--20				: rgba($white, 0.2);
-$white--80				: rgba($white, 0.8);
+$white--20                     : rgba($white, 0.2);
+$white--80                     : rgba($white, 0.8);
 
-$black--20				: rgba($black, 0.2);
-$black--80				: rgba($black, 0.8);
+$black--20                     : rgba($black, 0.2);
+$black--80                     : rgba($black, 0.8);
 
-$shadow--light		: 0 1px 2px $black--20;
-$shadow--heavy		: 0 1px 2px $black--80;
+$shadow--light                 : 0 1px 2px $black--20;
+$shadow--heavy                 : 0 1px 2px $black--80;
 
 // Border Radius
 
-$br--min							: 8px;
-$br										: 15px;
-$br--round						: 50%;
+$br                            : 15px;
+$br--round                     : 50%;
 
 // Transitions
 
-$transition-duration  : 250ms;
+$transition-duration           : 250ms;
 
 // Path to Assets
 
-$path--css-img				: "img"; 
-
-// Grid
-
-// $g-col-width    : 65px;
-// $g-gutter-width : 20px;
-// $g-col-count    : 12;
-// $g-cont-max-w   : 1050px;
+$path--css-img                 : "img";
 
 // Breakpoints
 
-$small						: 1em;
-$medium						: 36em; // 576px
-$large						: 48em; // 768px
-$max-width				: 66em; // 10~~px
+$small                         : 1em;
+$medium                        : 40em;
+$large                         : 64em;
+$max-width                     : 66em;
+
+// Margins
+
+$mg--xs                        : 8px;
+$mg--sm                        : 15px;
+$mg--md                        : 35px;
+$mg--lg                        : 90px;
+$mg--x-lg                      : 150px;
+$mg--xx-lg                     : 180px;

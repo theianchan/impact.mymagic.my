@@ -1,0 +1,101 @@
+%testimonials {
+  .participant {
+    display: none;
+  }
+  .participant:first-child {
+    display: block;
+  }
+  .participant iframe {
+    width: 100%;
+  }
+  .testimonials-lead {
+    margin-bottom: em(60px);
+  }
+  em {
+    color: $accent;
+  }
+}
+
+.testimonial-controls {
+  margin-bottom: em(30px);
+
+  @extend %controls;
+  @media screen and (min-width: $large) {
+    li {
+      display: block;
+      margin-left: 50%;
+    }
+  }
+}
+
+.instagram-media {
+  width: 99.375%;
+  width: calc(100% - 2px);
+  max-width: 658px;
+  margin: 1px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: #FFFFFF;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  &>div {
+    padding: 8px;
+    &>div {
+      line-height: 0;
+      width: 100%;
+      margin-top: 40px;
+      padding: 50.0% 0;
+      text-align: center;
+      background: #F8F8F8;
+      &>div {
+        position: relative;
+        top: -22px;
+        display: block;
+        width: 44px;
+        height: 44px;
+        margin: 0 auto -44px;
+      }
+    }
+    p:nth-child(1) {
+      margin: 8px 0 0 0;
+      padding: 0 4px;
+      a {
+        font-family: Arial,sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 17px;
+        text-decoration: none;
+        word-wrap: break-word;
+        color: #000000;
+      }
+    }
+    p:nth-child(2) {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 17px;
+      overflow: hidden;
+      margin-top: 8px;
+      margin-bottom: 0;
+      padding: 8px 0 7px;
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #C9C8CD;
+      a {
+        font-family: Arial,sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 17px;
+        text-decoration: none;
+        color: #C9C8CD;
+      }
+      time {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}

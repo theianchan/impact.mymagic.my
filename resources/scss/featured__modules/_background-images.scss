@@ -1,0 +1,55 @@
+%fullscreen-background-image {
+  width: 100%;
+  height: 100%;
+  background-color: $grey;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+%background--span {
+  background-position: 0 0;
+
+  @extend %fullscreen-background-image;
+}
+
+%background--centered {
+  padding: 25% 0;
+  background-position: center center;
+  background-size: cover;
+
+  @extend %fullscreen-background-image;
+}
+
+%background--centered-small {
+  @extend %background--centered;
+  @media screen and (min-width: $medium) {
+    padding: 25% 0 0;
+  }
+}
+
+%background--text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  height: 0;
+  padding: 25% 0;
+
+  -webkit-align-items: center;
+          align-items: center;
+  @extend %fullscreen-background-image;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+%background--button {
+  height: initial;
+  padding: 0 0 50%;
+  background-position: center bottom;
+
+  @extend %fullscreen-background-image;
+  @media screen and (min-width: $large) {
+    padding: 0 0 33%;
+  }
+}

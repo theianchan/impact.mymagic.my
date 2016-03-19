@@ -1,0 +1,86 @@
+.love-notes {
+  background-color: $white;
+  background-image: url('../img/from-the-community/rope-3b29c69d.png');
+  background-repeat: repeat-x;
+  background-position: center 75px;
+  .love-notes__title {
+    margin-bottom: $mg--lg;
+    img {
+      margin-right: $mg--sm;
+    }
+    img,
+    span {
+      line-height: 114px;
+      height: 114px;
+      vertical-align: initial;
+    }
+  }
+  .card {
+    overflow: hidden;
+    margin-bottom: $mg--md;
+    border: 1px solid $grey--light;
+    border-radius: $br;
+    background-color: $white;
+  }
+  .card__text {
+    font-size: em(14px);
+    padding: $mg--md;
+    color: $grey;
+    p {
+      line-height: 1.65;
+    }
+    a,
+    span {
+      color: $blue--light;
+    }
+    .card__button {
+      margin-top: $mg--md;
+
+      @extend %button--block;
+    }
+  }
+  .card__image {
+    width: 100%;
+  }
+  .card__profile {
+    max-width: 60px;
+    margin: $mg--md 0 0 $mg--md;
+    border-radius: $br--round;
+  }
+  .card__attribution {
+    font-family: $head-sans-serif;
+    font-weight: $head--bold;
+    margin-top: $mg--md;
+    margin-right: -$mg--md;
+    margin-bottom: -$mg--md;
+    margin-left: -$mg--md;
+    padding: $mg--sm $mg--md;
+    text-align: right;
+    color: $white;
+  }
+  .card--a1 {
+    .card__attribution {
+      background-color: $teal;
+    }
+  }
+  .card--a2 {
+    .card__attribution {
+      background-color: $blue-grey;
+    }
+  }
+  .card--a3 {
+    .card__attribution {
+      background-color: $yellow;
+    }
+  }
+  .card--a4 {
+    .card__attribution {
+      background-color: $indigo;
+    }
+  }
+  .card--a5 {
+    .card__attribution {
+      background-color: $blue;
+    }
+  }
+}
